@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Folha da ETEC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <button
+        class="burger"
+        id="burger"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#">Olimpíadas</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Cantina</a></li>
+        <li><a href="#">Biblioteca</a></li>
+        <li><a href="#">Educação</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Vestibulares</a></li>
+        <li><a href="#">Grêmio</a></li>
+        <li><a href="#">CPS</a></li>
+      </ul>
+    </nav>
+
+    <main class="wrap">
+      <h1 class="sec-title">Destaques</h1>
+
+      <section class="destaques" aria-label="Destaques">
+        
+      </section>
+
+      <section aria-label="Recomendado">
+        <div class="rec-head">
+          <h2>Recomendado</h2>
+          <div class="arrows">
+            <button id="prev" aria-label="Anterior">&#8249;</button>
+            <button id="next" aria-label="Próximo">&#8250;</button>
+          </div>
+        </div>
+        <div class="track" id="track">
+          <a class="rec" href="#"
+            ><span class="av"></span>
+            <div>
+              <h3>
+                Inscrições abertas para a XIV Olimpíada Brasileira de Matemática
+                (OBM)
+              </h3>
+              <p>
+                Estudantes de todo o país já podem se inscrever na maior
+                competição de matemática do Brasil.
+              </p>
+            </div></a
+          >
+          <a class="rec" href="#"
+            ><span class="av"></span>
+            <div>
+              <h3>
+                Jovens para a Olimpíada Brasileira de Astronomia e Astronáutica
+                (OBA)
+              </h3>
+              <p>
+                Participe da próxima edição e conheça os resultados do Portal
+                Oficial da OBA.
+              </p>
+            </div></a
+          >
+          <a class="rec" href="#"
+            ><span class="av"></span>
+            <div>
+              <h3>
+                Inscrições abertas para a Olimpíada Brasileira de Robótica
+              </h3>
+              <p>
+                Monte sua equipe e participe das etapas regionais e nacional.
+              </p>
+            </div></a
+          >
+        </div>
+      </section>
+
+      <section aria-label="Últimas notícias">
+        <div class="ult-head">
+          <h2>Últimas notícias</h2>
+          <a class="pill" href="#">Ver mais</a>
+        </div>
+        
+        <ul class="links">
+          <li><a href="#">Teatro</a></li>
+          <li><a href="#">Semana sabática</a></li>
+          <li><a href="#">Matrícula comum</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
