@@ -35,6 +35,15 @@ a {
   padding: 0 auto;
 }
 
+section{
+  margin-top: 100px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
 /* Menu */
 .topbar {
   padding: 14px 20px;
@@ -279,5 +288,17 @@ a {
 }
 
 .img {
-  width: 49.8%;
+  width: 30%;
+}
+
+.noticias{
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--vermelho);
+  height: 100px;
 }
