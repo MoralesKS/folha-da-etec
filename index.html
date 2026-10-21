@@ -2,10 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Folha da ETEC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -15,17 +12,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="topbar">
-      <button
-        class="burger"
-        id="burger"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        aria-controls="nav"
-      >
+    <!-- Cabeçalho: menu (3 barras) à esquerda e logo à direita -->
+    <header class="barra-topo">
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir ou fechar menu" aria-expanded="true" aria-controls="menu">
+        <span></span><span></span><span></span>
       </button>
-    </div>
-    <nav class="nav" id="nav" aria-label="Principal">
+
+      <!-- Coloque aqui a logo do projeto (troque o arquivo em ./assets/logo.png) -->
+      <a class="logo-projeto" href="./index.html">
+        <img src="./assets/logo-jornal.jpeg" alt="Logo do projeto Cadê o jornal?" />
+      </a>
+    </header>
+
+    <nav class="menu aberto" id="menu" aria-label="Principal">
       <ul>
         <li><a href="#">Olimpíadas</a></li>
         <li><a href="#">Eventos</a></li>
@@ -40,114 +39,138 @@
       </ul>
     </nav>
 
-    <main class="wrap">
-      <h1 class="sec-title">Destaques</h1>
+    <main class="conteudo">
+      <h1 class="titulo-secao">Destaques</h1>
 
+      <!-- 6 destaques: foto em cima, título embaixo -->
       <section class="destaques" aria-label="Destaques">
-        <div class="div-fotos">
-          <div class="alinhar">
-            <img class="img" src="./assets/etec-taboao.jpg" alt="placeholder">
-            <img class="img" src="./assets/OBA-olimpiada.png" alt="placeholder">
-            <img class="img" src="./assets/OBA-olimpiada.png" alt="placeholder">
-          </div>
-          <div class="alinhar">
-            <img class="img" src="./assets/Solve-of-Tomorrow-show.png" alt="placeholder">
-            <img class="img" src="./assets/automaçao-industrial.jpg" alt="placeholder">
-            <img class="img" src="./assets/automaçao-industrial.jpg" alt="placeholder">
-          </div>
-        </div>
+        <article class="cartao-destaque">
+          <a href="#">
+            <img class="cartao-foto" src="./assets/etec-taboao.jpg" alt="Fachada da Etec de Taboão da Serra" />
+            <h3 class="cartao-titulo">Etec de Taboão da Serra abre vagas para o novo curso técnico em Automação Industrial</h3>
+          </a>
+        </article>
+
+        <article class="cartao-destaque">
+          <a href="#">
+            <img class="cartao-foto" src="./assets/OBA-olimpiada.png" alt="Logo da Olimpíada Brasileira de Astronomia e Astronáutica" />
+            <h3 class="cartao-titulo">Inscrições abertas para a Olimpíada Brasileira de Astronomia e Astronáutica</h3>
+          </a>
+        </article>
+
+        <article class="cartao-destaque">
+          <a href="#">
+            <img class="cartao-foto" src="./assets/OBA-olimpiada.png" alt="Logo da Olimpíada Brasileira de Astronomia e Astronáutica" />
+            <h3 class="cartao-titulo">Alunos da Etec participam da Olimpíada Brasileira de Astronomia</h3>
+          </a>
+        </article>
+
+        <article class="cartao-destaque">
+          <a href="#">
+            <img class="cartao-foto" src="./assets/Solve-of-Tomorrow-show.png" alt="Alunos recebendo prêmio do Solve for Tomorrow" />
+            <h3 class="cartao-titulo">Estão abertas as inscrições para a 13ª edição do Solve for Tomorrow Brasil</h3>
+          </a>
+        </article>
+
+        <article class="cartao-destaque">
+          <a href="#">
+            <img class="cartao-foto" src="./assets/automaçao-industrial.jpg" alt="Curso de Automação Industrial" />
+            <h3 class="cartao-titulo">Novo curso técnico em Automação Industrial chega à Etec</h3>
+          </a>
+        </article>
+
+        <article class="cartao-destaque">
+          <a href="#">
+            <img class="cartao-foto" src="./assets/automaçao-industrial.jpg" alt="Curso de Automação Industrial" />
+            <h3 class="cartao-titulo">Conheça o curso de Automação Industrial da Etec</h3>
+          </a>
+        </article>
       </section>
 
       <section aria-label="Recomendado">
-        <div class="rec-head">
+        <div class="recomendado-topo">
           <h2>Recomendado</h2>
-
-          <div class="arrows">
-            <button id="prev" aria-label="Anterior">&#8249;</button>
-            <button id="next" aria-label="Próximo">&#8250;</button>
+          <div class="setas">
+            <button id="anterior" aria-label="Anterior">&#8249;</button>
+            <button id="proximo" aria-label="Próximo">&#8250;</button>
           </div>
         </div>
-        
-        <div class="track" id="track">
-          <a class="rec" href="#"
-            ><span class="av"></span>
+
+        <div class="trilho" id="trilho">
+          <a class="recomendado-item" href="#">
+            <span class="avatar"></span>
             <div>
-              <h3>
-                Inscrições abertas para a XIV Olimpíada Brasileira de Matemática
-                (OBM)
-              </h3>
-              <p>
-                Estudantes de todo o país já podem se inscrever na maior
-                competição de matemática do Brasil.
-              </p>
-            </div></a
-          >
-          <a class="rec" href="#"
-            ><span class="av"></span>
+              <h3>Inscrições abertas para a XIV Olimpíada Brasileira de Matemática (OBM)</h3>
+              <p>Estudantes de todo o país já podem se inscrever na maior competição de matemática do Brasil.</p>
+            </div>
+          </a>
+          <a class="recomendado-item" href="#">
+            <span class="avatar"></span>
             <div>
-              <h3>
-                Jovens para a Olimpíada Brasileira de Astronomia e Astronáutica
-                (OBA)
-              </h3>
-              <p>
-                Participe da próxima edição e conheça os resultados do Portal
-                Oficial da OBA.
-              </p>
-            </div></a
-          >
-          <a class="rec" href="#"
-            ><span class="av"></span>
+              <h3>Jovens para a Olimpíada Brasileira de Astronomia e Astronáutica (OBA)</h3>
+              <p>Participe da próxima edição e conheça os resultados do Portal Oficial da OBA.</p>
+            </div>
+          </a>
+          <a class="recomendado-item" href="#">
+            <span class="avatar"></span>
             <div>
-              <h3>
-                Inscrições abertas para a Olimpíada Brasileira de Robótica
-              </h3>
-              <p>
-                Monte sua equipe e participe das etapas regionais e nacional.
-              </p>
-            </div></a
-          >
+              <h3>Inscrições abertas para a Olimpíada Brasileira de Robótica</h3>
+              <p>Monte sua equipe e participe das etapas regionais e nacional.</p>
+            </div>
+          </a>
         </div>
       </section>
 
       <section aria-label="Últimas notícias">
-        <div class="ult-head">
+        <div class="ultimas-topo">
           <h2>Últimas notícias</h2>
-          <a class="pill" href="#">Ver mais</a>
+          <a class="botao-ver-mais" href="#">Ver mais</a>
         </div>
 
-        <div class="div-fotos">
-          <div class="alinhar">
-            <img style="width: 49.8%;" src="./assets/img-placeholder.jpg" alt="placeholder">
-            <img style="width: 49.8%;" src="./assets/img-placeholder.jpg" alt="placeholder">
+        <div class="fotos-ultimas">
+          <div class="linha">
+            <img class="foto-metade" src="./assets/img-placeholder.jpg" alt="placeholder" />
+            <img class="foto-metade" src="./assets/img-placeholder.jpg" alt="placeholder" />
           </div>
-          <div class="alinhar">
-            <img style="width: 59.8%;" src="./assets/img-placeholder.jpg" alt="placeholder">
-            <img style="width: 39.8%; height: 300px;" src="./assets/img-placeholder.jpg" alt="placeholder">
-          </3iv>
+          <div class="linha">
+            <img class="foto-sessenta" src="./assets/img-placeholder.jpg" alt="placeholder" />
+            <img class="foto-quarenta" src="./assets/img-placeholder.jpg" alt="placeholder" />
+          </div>
         </div>
-        
-        <div class="noticias">
-          <a href="">
+
+        <div class="noticia-item">
+          <a href="#">
             <h3>Teatro</h3>
             <p>Lorem Ipsum</p>
           </a>
         </div>
 
-        <div class="noticias">
-          <a href="">
+        <div class="noticia-item">
+          <a href="#">
             <h3>Semana Midiática</h3>
             <p>Lorem Ipsum</p>
           </a>
         </div>
 
-        <div class="noticias">
-          <a href="">
+        <div class="noticia-item">
+          <a href="#">
             <h3>Matéria Comum</h3>
             <p>Lorem Ipsum</p>
           </a>
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <nav class="rodape-links" aria-label="Rodapé">
+          <a href="#">Sobre nós</a>
+          <a href="#">Sugestões</a>
+        </nav>
+        <p class="rodape-copia">© 2025 | Cadê o jornal? - Etec Taboão da Serra</p>
+      </div>
+    </footer>
 
     <script src="./scripts/script.js"></script>
   </body>

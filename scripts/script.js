@@ -1,17 +1,15 @@
-// Menu hambúrguer
-const burger = document.getElementById("burger"),
-  nav = document.getElementById("nav");
-burger.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  burger.setAttribute("aria-expanded", open);
+// Menu: o botão de 3 barras mostra/esconde os tópicos
+const botaoMenu = document.getElementById('botao-menu');
+const menu = document.getElementById('menu');
+
+botaoMenu.addEventListener('click', () => {
+  const aberto = menu.classList.toggle('aberto');
+  botaoMenu.setAttribute('aria-expanded', aberto);
 });
 
 // Carrossel "Recomendado"
-const track = document.getElementById("track");
-const step = () => track.querySelector(".rec").offsetWidth + 20;
-document
-  .getElementById("next")
-  .addEventListener("click", () => track.scrollBy({ left: step() }));
-document
-  .getElementById("prev")
-  .addEventListener("click", () => track.scrollBy({ left: -step() }));
+const trilho = document.getElementById('trilho');
+const passo = () => trilho.querySelector('.recomendado-item').offsetWidth + 20;
+
+document.getElementById('proximo').addEventListener('click', () => trilho.scrollBy({ left: passo() }));
+document.getElementById('anterior').addEventListener('click', () => trilho.scrollBy({ left: -passo() }));
