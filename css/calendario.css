@@ -180,36 +180,29 @@ main {
  
  }
 
-/* Rodapé vermelho com textos pretos */
 .rodape {
   background: var(--vermelho);
-  color: #000;
+  color: #fff;
   margin-top: 60px;
-  padding: 40px 20px 24px;
+  padding: 32px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;            
+  gap: 16px;
+}
+
+.img-footer {
+  display: block;
+  width: 200px;
 }
 
 .rodape-conteudo {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.rodape-links {
-  display: flex;
-  gap: 18px;
-}
-
-.rodape-links a {
-  color: #000;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.rodape-links a:hover {
-  text-decoration: underline;
+  text-align: right;
 }
 
 .rodape-copia {
-  margin: 28px 0 0;
-  font-size: 13px;
-  color: #000;
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
 }

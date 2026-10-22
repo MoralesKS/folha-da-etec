@@ -13,3 +13,7 @@ const passo = () => trilho.querySelector('.recomendado-item').offsetWidth + 20;
 
 document.getElementById('proximo').addEventListener('click', () => trilho.scrollBy({ left: passo() }));
 document.getElementById('anterior').addEventListener('click', () => trilho.scrollBy({ left: -passo() }));
+
+function aviso(){
+  alert("Página em desenvolvimento, volte mais tarde!")
+}
