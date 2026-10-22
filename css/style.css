@@ -318,3 +318,86 @@ section {
   font-size: 13px;
   color: #000;
 }
+
+
+/*  NOSSO GRÊMIO ESTUDANTIL  */
+
+.secao-gremio {
+  width: 100%;
+  max-width: 760px;
+  margin: 50px auto;
+  padding: 0 20px 30px;
+  color: #465c67;
+  font-family: "Source Sans 3", Arial, sans-serif;
+}
+
+/* Título principal */
+
+.secao-gremio .titulo-gremio {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 0 8px;
+  color: #465c67;
+  font-family: Rokkitt, Georgia, serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Galeria de imagens */
+
+.galeria-gremio {
+  width: 75%;
+  margin: 0 auto 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 9px;
+}
+
+.galeria-gremio img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+}
+
+/* Textos dos projetos */
+
+.textos-gremio {
+  width: 100%;
+}
+
+.item-gremio {
+  margin: 0 0 24px;
+}
+
+.item-gremio h3 {
+  margin: 0 0 12px;
+  color: #465c67;
+  font-family: Rokkitt, Georgia, serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.item-gremio p {
+  margin: 0;
+  color: #465c67;
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Efeito ao passar o mouse nas imagens */
+
+.galeria-gremio img {
+  transition: transform 0.2s ease;
+}
+
+.galeria-gremio img:hover {
+  transform: scale(1.02);
+}
+
