@@ -1,0 +1,226 @@
+:root {
+  --fundo: #f5f2f1;
+  --azul: #2f5a7a;
+  --vermelho: #b22a2a;
+  --texto: #222;
+  --borda: #cfc9c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* mantém o rodapé sempre no fim da página */
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "Source Sans 3", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: Rokkitt, Georgia, serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+.conteudo {
+  flex: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Topo e menu */
+.barra-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.botao-menu {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.botao-menu span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #222;
+  margin: 5px 0;
+}
+
+.logo-projeto img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.menu {
+  display: none;
+  border-top: 1px solid var(--borda);
+  border-bottom: 1px solid var(--borda);
+  margin-bottom: 45px;
+}
+
+.menu.aberto {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 22px;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Título */
+.titulo-secao {
+  color: var(--azul);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 24px 0 14px;
+}
+
+/* Página de eventos */
+.eventos {
+  max-width: 600px;
+}
+
+/* Blocos do topo: caixa com borda + caixa vermelha */
+.eventos-destaque {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.eventos-destaque div {
+  height: 110px;
+}
+
+.eventos-caixa-vazia {
+  background: #fff;
+  border: 1px solid var(--azul);
+}
+
+.eventos-caixa-vermelha {
+  background: var(--vermelho);
+}
+
+/* Fotos 60/40 */
+.eventos-fotos {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.eventos-fotos img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+}
+
+/* Lista de eventos */
+.evento {
+  margin-bottom: 32px;
+}
+
+.evento-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.evento-topo h2 {
+  font-size: 18px;
+  color: var(--azul);
+}
+
+.evento-botao {
+  background: var(--azul);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.evento-botao:hover,
+.evento-botao:focus-visible {
+  background: #234660;
+}
+
+.evento p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--azul);
+}
+
+/* Rodapé */
+.rodape {
+  background: var(--vermelho);
+  color: #fff;
+  margin-top: 60px;
+  padding: 32px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-footer {
+  display: block;
+  width: 200px;
+}
+
+.rodape-conteudo {
+  text-align: right;
+}
+
+.rodape-copia {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .eventos-destaque div,
+  .eventos-fotos img {
+    height: 90px;
+  }
+}
