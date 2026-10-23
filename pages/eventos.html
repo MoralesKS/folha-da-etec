@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Eventos | Folha da ETEC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/eventos.css" />
+
+  </head>
+  <body>
+    <header class="barra-topo">
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir ou fechar menu" aria-expanded="true" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a class="logo-projeto" href="../index.html">
+        <img src="../assets/logo-jornal.jpeg" alt="Logo do jornal" />
+      </a>
+    </header>
+
+    <nav class="menu aberto" id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="../index.html">Notícias</a></li>
+        <li><a href="#">Olimpíadas</a></li>
+        <li><a href="./eventos.html">Eventos</a></li>
+        <li><a href="#">Cantina</a></li>
+        <li><a href="#">Biblioteca</a></li>
+        <li><a href="#">Educação</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Vestibulares</a></li>
+        <li><a href="#">Grêmio</a></li>
+        <li><a href="#">CPS</a></li>
+        <li><a href="./calendario.html">Calendário</a></li>
+      </ul>
+    </nav>
+
+    <main class="conteudo eventos">
+      <h1 class="titulo-secao">Eventos gerais</h1>
+
+      <div class="eventos-destaque" aria-hidden="true">
+        <div class="eventos-caixa-vazia"></div>
+        <div class="eventos-caixa-vermelha"></div>
+      </div>
+
+      <div class="eventos-fotos">
+        <img src="../assets/img-placeholder.jpg" alt="Foto de evento da Etec" />
+        <img src="../assets/img-placeholder.jpg" alt="Foto de evento da Etec" />
+      </div>
+
+      <article class="evento">
+        <div class="evento-topo">
+          <h2>Hackathon</h2>
+          <a class="evento-botao" href="https://robotica.cps.sp.gov.br/hackathon-2026/">Saiba mais</a>
+        </div>
+        <p>
+          O Hackathon é uma boa oportunidade de aumentar sua experiência na área de trabalho, onde seus participantes
+          devem fazer uma competição de qual site fica melhor. Os primeiros anos fazem só a prototipação e os segundos
+          fazem o projeto no código, enquanto os terceiros vão ainda mais além.
+        </p>
+      </article>
+
+      <article class="evento">
+        <div class="evento-topo">
+          <h2>Semana técnica</h2>
+          <a class="evento-botao" href="#">Saiba mais</a>
+        </div>
+        <p>
+          Um evento onde temas úteis da base técnica da Etec (desenvolvimento de sistemas, T.I, entre outros) são
+          abordados. Nesses dias houve monitorias como uso de impressão 3D, aprendizado de como estilizar e manejar com
+          a ferramenta Figma, palestra com profissional em engenharia de software, Klayvem G. L. da Silva, monitorias
+          de cyber segurança e de portfólio e workshops em geral.
+        </p>
+      </article>
+
+      <article class="evento">
+        <div class="evento-topo">
+          <h2>Semana midiática</h2>
+          <a class="evento-botao" href="#">Saiba mais</a>
+        </div>
+        <p>
+          Um evento onde temas da internet e conexão com as redes sociais são abordados, vendo tanto da sua forma útil
+          como ferramentas da tecnologia e como elas nos auxiliam no dia a dia, tanto na sua forma perigosa, onde a
+          leva defasagem ao conhecimento dos jovens e a internet é usada para roubos e fraudes de cartão, etc.
+          Geralmente envolvem temáticas divertidas, como rodas de conversa, e, nesse ano, está sendo produzida uma
+          obra teatral do conhecido filme chamado A Fantástica Fábrica de Chocolates.
+        </p>
+      </article>
+    </main>
+
+    <footer class="rodape">
+      <img class="img-footer" src="../assets/logo-jornal.jpeg" alt="Logo do jornal" />
+      <div class="rodape-conteudo">
+        <p class="rodape-copia">©2026 | Folha da ETEC - Etec Taboão da Serra</p>
+      </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
