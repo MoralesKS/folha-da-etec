@@ -199,7 +199,7 @@ section {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 14px 0;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 
 .trilho::-webkit-scrollbar {
@@ -213,11 +213,15 @@ section {
   gap: 12px;
 }
 
+/* Imagem redonda de cada item do Recomendado */
 .avatar {
+  display: block;
   flex: 0 0 64px;
+  width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--azul);
+  object-fit: cover; /* corta a foto para preencher o círculo sem distorcer */
+  background: var(--azul); /* aparece enquanto a imagem não existe */
 }
 
 .recomendado-item h3 {
@@ -253,7 +257,6 @@ section {
 
 .fotos-ultimas {
   width: 80%;
-  background-color: #1c5fa8;
   margin: 16px auto 24px;
 }
 
@@ -285,6 +288,7 @@ section {
   margin: 2px 0 0;
 }
 
+/* Rodapé */
 .rodape {
   background: var(--vermelho);
   color: #fff;
@@ -293,7 +297,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;            
+  align-items: center;
   gap: 16px;
 }
 
@@ -311,7 +315,6 @@ section {
   font-size: 20px;
   color: #fff;
 }
-
 
 /*  NOSSO GRÊMIO ESTUDANTIL  */
 
@@ -384,8 +387,6 @@ section {
   text-align: left;
 }
 
-/* Efeito ao passar o mouse nas imagens */
-
 .galeria-gremio img {
   transition: transform 0.2s ease;
 }
@@ -393,4 +394,3 @@ section {
 .galeria-gremio img:hover {
   transform: scale(1.02);
 }
-

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>OBA: acompanhe os resultados e prepare-se para a próxima edição - Folha da ETEC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/noticia-oba-resultados.css" />
+  </head>
+  <body>
+    <header class="barra-topo">
+      <button class="botao-menu" id="botao-menu" aria-label="Abrir ou fechar menu" aria-expanded="true" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="logo-projeto" href="../index.html">
+        <img src="../assets/logo-jornal.jpeg" alt="Logo do jornal" />
+      </a>
+    </header>
+
+    <nav class="menu aberto" id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="../index.html">Notícias</a></li>
+        <li><a href="#" onclick={aviso()}>Olimpíadas</a></li>
+        <li><a href="../pages/eventos.html">Eventos</a></li>
+        <li><a href="#" onclick={aviso()}>Biblioteca</a></li>
+        <li><a href="#" onclick={aviso()}>Educação</a></li>
+        <li><a href="#" onclick={aviso()}>Projetos</a></li>
+        <li><a href="#" onclick={aviso()}>Vestibulares</a></li>
+        <li><a href="../pages/gremio.html">Grêmio</a></li>
+        <li><a href="#" onclick={aviso()}>CPS</a></li>
+        <li><a href="../pages/calendario.html">Calendário</a></li>
+      </ul>
+    </nav>
+
+    <main class="artigo">
+      <h1 class="titulo-pagina">OBA: acompanhe os resultados e prepare-se para a próxima edição</h1>
+
+      <div class="galeria">
+        <figure><img src="../assets/OBA-olimpiada.png" alt="Imagem ilustrativa de astronomia" /></figure>
+      </div>
+
+      <section class="secao-texto">
+        <div class="secao-topo">
+          <h2>Resultados e premiação</h2>
+          <a class="botao-link" href="https://www.oba.org.br" target="_blank" rel="noopener" aria-label="Saiba mais sobre Resultados e premiação">Saiba mais</a>
+        </div>
+        <p>Depois da prova, os resultados da Olimpíada Brasileira de Astronomia e Astronáutica (OBA) podem ser consultados no portal oficial. Os estudantes com melhor desempenho recebem medalhas de ouro, prata e bronze, e as escolas participantes também são reconhecidas. A edição de 2026 foi a 29ª da competição.</p>
+      </section>
+
+      <section class="secao-texto">
+        <div class="secao-topo">
+          <h2>Como se preparar</h2>
+          <a class="botao-link" href="https://www.oba.org.br" target="_blank" rel="noopener" aria-label="Saiba mais sobre Como se preparar">Saiba mais</a>
+        </div>
+        <p>O melhor treino é resolver as provas e os gabaritos de edições anteriores, disponíveis no site oficial. Em 2026, a organização também fez um aulão ao vivo com revisão para a prova. Vale estudar o Sistema Solar, as estrelas, as constelações e noções de astronáutica, como o funcionamento de foguetes e satélites.</p>
+      </section>
+
+      <section class="secao-texto">
+        <div class="secao-topo">
+          <h2>Próxima edição</h2>
+          <a class="botao-link" href="https://www.oba.org.br" target="_blank" rel="noopener" aria-label="Saiba mais sobre Próxima edição">Saiba mais</a>
+        </div>
+        <p>Na edição seguinte, em 2027, as inscrições devem seguir o padrão dos anos anteriores: elas costumam abrir no início do ano, são gratuitas e feitas pela escola no site oficial. Fique de olho nos prazos, porque em alguns anos eles foram prorrogados, e converse com o professor responsável pela inscrição da turma.</p>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <img class="img-footer" src="../assets/logo-jornal.jpeg" alt="Logo do jornal" />
+      <div class="rodape-conteudo">
+        <p class="rodape-copia">©2026 | Folha da ETEC - Etec Taboão da Serra</p>
+      </div>
+    </footer>
+
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>
